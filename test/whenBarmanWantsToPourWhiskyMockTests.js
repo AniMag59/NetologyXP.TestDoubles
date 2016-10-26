@@ -1,9 +1,7 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import { Barman } from '../src/barmen'
-import { Client} from '../src/client'
-import { Cupboard} from '../src/cupboard'
-
+var assert = require('assert');
+var Barman = require('../src/barmen.js');
+var Cupboard = require('../src/cupboard.js');
+var Client = require('../src/client.js');
 
 suite('Mock: when client ask 200 grams of whisky', function () {
 

@@ -1,19 +1,20 @@
 'use strict';
+class Cupboard{
+    constructor() {
+        this.isOpen = function () {
 
-module.exports= {
-    Cupboard: function(){
-        this.isOpen = function(){
-            /**/
             return true;
         };
 
-        this.hasDrink = function(drinkName, volume) {
-            /* Предположим что здесь мы ходим в базу данных*/
+        this.hasDrink = function (drinkName, volume) {
+
             return true;
         };
 
-        this.getDrink = function(drinkName, volume) {
-            /* Предположим что здесь мы ходим в базу данных*/
+        this.getDrink = function (drinkName, volume) {
+
             return volume;
         }
-    }};
+    }
+}
+module.exports = Cupboard;

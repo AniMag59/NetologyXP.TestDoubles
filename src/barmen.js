@@ -1,7 +1,6 @@
 'use strict';
-
-module.exports= {
-    Barman: function(cupboard){
+class Barman{
+    constructor(cupboard){
         this.pour = function(drinkName, volume, client) {
             if (volume < 0) {
                 throw new Error('Invalid volume of whisky');
@@ -17,4 +16,6 @@ module.exports= {
 
             return cupboard.getDrink(drinkName, volume);
         };
-    }}
+    }
+}
+module.exports = Barman;
