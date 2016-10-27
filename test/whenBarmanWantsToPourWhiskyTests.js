@@ -6,7 +6,7 @@ var Client = require('../src/client.js');
 
 suite('when client ask 200 grams of whisky', function () {
     var client = new Client();
-    let drinkName = 'whisky';
+    var drinkName = 'whisky';
     setup(function () {
         console.log('Client setup');
         client.sober();
