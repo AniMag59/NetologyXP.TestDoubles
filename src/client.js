@@ -6,10 +6,6 @@ class Client{
             totalyDrunked += volume;
             return volume;
         }
-        this.drink = function (volume) {
-            totalyDrunked += volume;
-            return volume;
-        }
 
         this.sober = function () {
             totalyDrunked = 0;
